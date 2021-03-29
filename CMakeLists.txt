@@ -10,7 +10,7 @@ set(LibraryName "cliparser")
 set(CMakeFlags "-std=c++17")
 set(CMakeDebugFlags "-g")
 
-option(CLI_PARSER_STATIC "If true, compiles as a shared library, else compiles as a static library" OFF)
+option(CLI_PARSER_STATIC "If true, compiles as a static library, else compiles as a shared library" OFF)
 
 # ===
 
