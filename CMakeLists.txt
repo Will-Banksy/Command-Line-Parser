@@ -43,7 +43,7 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${CMakeFlags}")
 
 message(STATUS "Build Type: ${CMAKE_BUILD_TYPE}")
 
-if("${SharedLib}")
+if("${CLI_PARSER_STATIC}")
 	add_library("${LibraryName}" SHARED "${SourceFiles}" "${HeaderFiles}")
 else()
 	add_library("${LibraryName}" STATIC "${SourceFiles}" "${HeaderFiles}")
