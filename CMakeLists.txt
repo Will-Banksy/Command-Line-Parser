@@ -44,9 +44,9 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${CMakeFlags}")
 message(STATUS "Build Type: ${CMAKE_BUILD_TYPE}")
 
 if("${CLI_PARSER_STATIC}")
-	add_library("${LibraryName}" SHARED "${SourceFiles}" "${HeaderFiles}")
-else()
 	add_library("${LibraryName}" STATIC "${SourceFiles}" "${HeaderFiles}")
+else()
+	add_library("${LibraryName}" SHARED "${SourceFiles}" "${HeaderFiles}")
 endif()
 
 target_include_directories("${LibraryName}" PRIVATE "${SourceDir}")
