@@ -6,7 +6,7 @@ It could probably do with more work but it should work pretty well as it is
 
 ## Compiling
 
-### Static Library
+### Shared Library
 
 Simply run cmake and make (or ninja or whatever you want to use)
 
@@ -17,13 +17,13 @@ cmake ..
 make
 ```
 
-### Shared Library
+### Static Library
 
-Run cmake with the option -DSharedLib and then make or whatever
+Simply run cmake (but setting the option CLI_PARSER_STATIC to ON) and make (or ninja or whatever you want to use)
 
 First make a build directory in the project root directory and enter that, then:
 
 ```bash
-cmake -DSharedLib=ON ..
+cmake -DCLI_PARSER_STATIC=ON ..
 make
 ```
