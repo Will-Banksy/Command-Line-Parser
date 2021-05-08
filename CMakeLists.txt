@@ -7,8 +7,8 @@ set(ProjectName "CommandLineParser")
 set(ProjectVersion "1.0")
 set(LibraryName "cliparser")
 
-set(CMakeFlags "-std=c++17")
-set(CMakeDebugFlags "-g")
+set(CMakeFlags "")
+set(CMakeDebugFlags "")
 
 option(CLI_PARSER_STATIC "If true, compiles as a static library, else compiles as a shared library" OFF)
 
